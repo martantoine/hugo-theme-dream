@@ -1,5 +1,5 @@
 <div class="flex items-center">
-  {{ if .Params.avatar }}
+  <!-- {{ if .Params.avatar }}
   <div class="avatar mr-1">
     <div class="w-24 rounded-full">
       <img class="my-0!" src="{{ .Params.avatar }}" alt="{{ .Params.author }}" />
@@ -7,9 +7,9 @@
   </div>
   {{ else }}
   <span>@</span>
-  {{ end }}
+  {{ end }} -->
 
-  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  <!-- <span itemprop="author" itemscope itemtype="https://schema.org/Person">
   {{ if .Params.author }}
     {{ if and .Params.authorlink (eq .template "single") }}
       <a itemprop="url" href="{{ .Params.authorlink }}" target="_blank">
@@ -21,5 +21,5 @@
   {{ else }}
     <span itemprop="name">{{ site.Params.author }}</span>
   {{ end }}
-  </span>
+  </span> -->
 </div>
